@@ -8,3 +8,4 @@ local opt = vim.opt
 opt.autoindent = true -- copy indent from current line when starting new one
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line, or insert mode start position
 opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+opt.spelllang= {"en", "pt-br"}
