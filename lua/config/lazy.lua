@@ -7,6 +7,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+-- Set Python 3 executable path
+-- vim.g.python3_host_prog = '/home/felixoakz/Documents/code/gouveia/back/venv/bin/python3'
+--
+-- vim.g.dbs = {
+--   netinove_dev = 'mariadb://jeremias:fCbwV4DT_DBjh7ijDULLYZhU@127.0.0.1:33016'
+-- }
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
